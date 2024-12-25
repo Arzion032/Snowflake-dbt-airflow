@@ -198,3 +198,19 @@ Runtime Error
 [0m16:13:06.845331 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a231e9eaba0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a231e319670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a231e53e330>]}
 [0m16:13:06.846278 [debug] [MainThread]: Flushing usage events
 [0m16:13:08.344937 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m01:28:41.502156 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7866a55568a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7866a545cfb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7866a55570b0>]}
+
+
+============================== 01:28:41.536594 | e01fd3dc-600e-47ec-9262-670d1d9e6d41 ==============================
+[0m01:28:41.536594 [info ] [MainThread]: Running with dbt=1.9.1
+[0m01:28:41.537160 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/melvin-sarabia/.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m01:28:41.537629 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/melvin-sarabia/Downloads/Arzion/Playground/dbt-snow-flow/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m01:28:41.538599 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.08451692, "process_in_blocks": "0", "process_kernel_time": 0.251572, "process_mem_max_rss": "111368", "process_out_blocks": "30304", "process_user_time": 2.647501}
+[0m01:28:41.539164 [debug] [MainThread]: Command `dbt run` failed at 01:28:41.539077 after 0.09 seconds
+[0m01:28:41.539536 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7866a54c3770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7866a5086060>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7866a545cfb0>]}
+[0m01:28:41.539854 [debug] [MainThread]: Flushing usage events
+[0m01:28:42.924601 [debug] [MainThread]: An error was encountered while trying to flush usage events
